@@ -1,4 +1,4 @@
-"use sctrict"  
+'use sctrict'
 
 //let number = 4.6;
 //console.log(213);
@@ -28,56 +28,46 @@ console.log(arr[1]); */
 //alert(`Привет,${user}`);
 //console.log(4 + +"5");
 //let incr = 10,
-   // decr = 10; 
+// decr = 10;
 //++incr;
-//--decr; 
-//console.log(++incr); 
-//console.log(--decr); 
+//--decr;
+//console.log(++incr);
+//console.log(--decr);
 //console.log(6%2);
-//console.log(2 + 4 * 2 !== '6'); 
+//console.log(2 + 4 * 2 !== '6');
 //const isChecked = false,
-      //isClose = false;
+//isClose = false;
 //console.log(isChecked || !isClose);
-//Задание 
-
-let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', "");
+//Задание
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '')
+if (numberOfFilms.count < 10) {
+	alert('Достаточно мало фильмов(')
+} else if (numberOfFilms.count >= 10 && numberOfFilms.count < 31) {
+	alert('Вы классический зритель')
+} else if (numberOfFilms.count > 30) {
+	alert('Вы киноман')
+} else {
+	alert('Произошла ошибка')
+}
 
 const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false,
+}
 
+for (let i = 1; i < 2; i++) {
+	const a = prompt('Один из последних просмотренных фильмов?', ''),
+		b = +prompt('На сколько оцените его?', '')
+	if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+		personalMovieDB.movies[a] = b
+		console.log('done')
+	} else {
+		console.log('error')
+		i--
+	}
+}
 
-    for (let i = 1; i < 2; i++) {
-        const a = prompt('Один из последних просмотренных фильмов?', ""), 
-            b = +prompt('На сколько оцените его?', ""); 
-            if (a.length == 0 && a == false && a.length < 50) {
-                return; 
-    } 
-    personalMovieDB.movies[a] = b;
-
-    }
-
-
-
-
-
-
-console.log(personalMovieDB);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(personalMovieDB)
