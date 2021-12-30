@@ -84,7 +84,7 @@ for (let i = 1; i <= 100; i++) {
 for (let i = 100; i > 0; i--) {
 	console.log(i)
 }
-*/
+
 //Выведите с помощью цикла столбец четных чисел от 1 до 100.
 
 for (let i = 1; i <= 100; i++) {
@@ -92,3 +92,24 @@ for (let i = 1; i <= 100; i++) {
 		console.log(i)
 	}
 }
+
+*/
+let numberPromocod = prompt('Введите свой промокод','');
+let arr = Array.from((numberPromocod),Number);
+
+
+
+console.log(arr);
+
+
+function showPromo (num) {
+	
+
+	
+	
+
+
+}
+
+
+console.log(showPromo(numberPromocod));
