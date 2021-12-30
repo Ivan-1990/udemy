@@ -39,6 +39,7 @@ console.log(arr[1]); */
 //isClose = false;
 //console.log(isChecked || !isClose);
 //Задание
+/*
 let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '')
 if (numberOfFilms.count < 10) {
 	alert('Достаточно мало фильмов(')
@@ -69,5 +70,25 @@ for (let i = 1; i < 2; i++) {
 		i--
 	}
 }
-
 console.log(personalMovieDB)
+*/
+
+//Выведите с помощью цикла столбец чисел от 1 до 100.
+/*
+for (let i = 1; i <= 100; i++) {
+	console.log(i)
+}
+*/
+//Выведите с помощью цикла столбец чисел от 100 до 1
+/*
+for (let i = 100; i > 0; i--) {
+	console.log(i)
+}
+*/
+//Выведите с помощью цикла столбец четных чисел от 1 до 100.
+
+for (let i = 1; i <= 100; i++) {
+	if (i % 2 == 0) {
+		console.log(i)
+	}
+}
