@@ -94,22 +94,37 @@ for (let i = 1; i <= 100; i++) {
 }
 
 */
-let numberPromocod = prompt('Введите свой промокод','');
-let arr = Array.from((numberPromocod),Number);
 
+/*
+if (numberProm !== null && numberProm != '' && numberProm.length <= 8) {
+	console.log('норм')
+} else {
+	alert('Неверный промокод')
+}
+console.log(arr)
 
+/*
+let arr = Array.from(numberPromocod, Number)
 
-console.log(arr);
+console.log(arr)
+*/
 
+let promocod = prompt('Введите свой промокод', '')
+let arr = Array.from(promocod, Number)
 
-function showPromo (num) {
-	
-
-	
-	
-
-
+for (let index = 0; index < arr.length; ++index) {
+	if (index == NaN) {
+		console.log('Промокод не подходит')
+	} else {
+		console.log('Все норм')
+	}
 }
 
+/*
 
-console.log(showPromo(numberPromocod));
+function showPromo(num) {
+	return num.length <= 8
+}
+
+alert(arr.every(showPromo))
+*/
